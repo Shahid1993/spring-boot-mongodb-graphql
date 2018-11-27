@@ -40,3 +40,23 @@ Sample Project for GraphQL with Spring Boot and MongoDB
 	}
 }
 ```
+
+```
+{
+	users{
+		...test
+		friends{
+			...test
+		}
+		articles{
+			title
+			minutesRead
+		}
+	}
+}
+fragment test on User{
+                name
+		age
+		createdAt
+}
+```
