@@ -1,0 +1,9 @@
+server:
+  port: 8060
+spring:
+  data:
+    mongodb:
+      database: graphql
+      host: localhost
+      port: 27017
+        
